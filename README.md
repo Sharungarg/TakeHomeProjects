@@ -7,6 +7,6 @@ A big shoutout to the iOS Development Community for teaching awesome stuff, so i
 we both follow the same tutor 😉
 
 ------
-### Project 1:
+### Project 1: Device Manager
 A basic device manager app that shows the devices list, some details about the device and also a menu view for the app.
-![device layout gif]()
+![device layout gif](https://github.com/Sharungarg/TakeHomeProjects/blob/main/DevicesManager/DeviceManager.gif)
