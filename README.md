@@ -1,10 +1,9 @@
 # iOS Take Home Projects
-This repo is to showcase some of the projects I did as part of the recruitment process at companies.  
-A software is never perfect, so if you have any suggestions/corrections for mistakes,  
-please feel free to raise of PR, or drop me an email at sharungarg@gmail.com
+This repo is to showcase some of the projects I did as part of the recruitment process.  
+A software is never perfect, so if you have any suggestions/corrections,  
+please feel free to raise a PR, or drop me an email at sharungarg@gmail.com
 
-A big shoutout to the iOS Development Community for teaching awesome stuff, so if you find any similarity in code implementation, 
-we both follow the same tutor 😉
+A big shoutout to the iOS Development Community for teaching awesome stuff 🎉
 
 ------
 ### Project 1: Device Manager
