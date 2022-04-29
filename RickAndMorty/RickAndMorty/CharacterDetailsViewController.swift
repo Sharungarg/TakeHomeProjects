@@ -38,9 +38,9 @@ class CharacterDetailsViewController: UIViewController {
         var constraints: [NSLayoutConstraint] = []
         let padding: CGFloat = 30
         let top = labelsStackView.topAnchor.constraint(equalTo: charImageView.bottomAnchor, constant: padding)
-        let leading = labelsStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: padding)
-        let trailing = labelsStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -padding)
-        let bottom = labelsStackView.bottomAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding)
+        let leading = labelsStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding)
+        let trailing = labelsStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding)
+        let bottom = labelsStackView.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor, constant: -padding)
         constraints.append(contentsOf: [top, leading, bottom, trailing])
         return constraints
     }
@@ -48,11 +48,10 @@ class CharacterDetailsViewController: UIViewController {
     private var charImageViewContraints: [NSLayoutConstraint] {
         var constraints: [NSLayoutConstraint] = []
         let imageSize = view.bounds.width - 40
-        
         let height = charImageView.heightAnchor.constraint(equalToConstant: imageSize)
         let width = charImageView.widthAnchor.constraint(equalToConstant: imageSize)
-        let centerX = charImageView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor)
-        let top = charImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20)
+        let centerX = charImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        let top = charImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20)
         constraints.append(contentsOf: [height, width, top, centerX])
         return constraints
     }
