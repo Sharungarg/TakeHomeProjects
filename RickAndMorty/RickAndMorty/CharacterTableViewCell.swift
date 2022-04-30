@@ -11,6 +11,8 @@ class CharacterTableViewCell: UITableViewCell {
     static let identifier = "CharacterTableViewCell"
     private static let defaultImage = UIImage(systemName: "person.fill")!
     
+    private var cellForCharacterIdentifier: Int?
+    
     private let characterImageView: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -98,15 +100,15 @@ class CharacterTableViewCell: UITableViewCell {
     }
     
     func configure(for char: Character) {
-        characterImageView.image = CharacterTableViewCell.defaultImage
         characterNameLabel.text = char.name
         episodesLabel.text = "Number of episodes: \(char.episode.count)"
-        setCharacterImage(imageURL: char.image)
+        cellForCharacterIdentifier = char.id
+        setCharacterImage(imageURL: char.image, cellIdentifier: char.id)
     }
     
-    private func setCharacterImage(imageURL: String) {
+    private func setCharacterImage(imageURL: String, cellIdentifier id: Int) {
         ImageHandler.shared.getImage(forURL: imageURL) { [weak self] image in
-            guard let charImage = image else { return }
+            guard let charImage = image, id == self?.cellForCharacterIdentifier else { return }
             
             DispatchQueue.main.async { 
                 self?.characterImageView.image = charImage
