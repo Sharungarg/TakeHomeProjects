@@ -32,6 +32,7 @@ A big shoutout to the iOS Development Community for teaching awesome stuff 🎉
   
 > ![device layout gif](https://github.com/Sharungarg/TakeHomeProjects/blob/main/DevicesManager/DeviceManager.gif)
 
+------
 ### Project 3: Contacts List
 > Shows contacts with the following rule:  
 > • Names in ascending order,
