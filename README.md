@@ -14,6 +14,7 @@ A big shoutout to the iOS Development Community for teaching awesome stuff 🎉
 > - Image Caching
 > - JSON Parsing
 > - MVVM Pattern
+> - Dependency Injection
 > - Protocol Oriented Programming
 > - Programmatic View
 
@@ -30,3 +31,15 @@ A big shoutout to the iOS Development Community for teaching awesome stuff 🎉
 > - Programmatic View
   
 > ![device layout gif](https://github.com/Sharungarg/TakeHomeProjects/blob/main/DevicesManager/DeviceManager.gif)
+
+### Project 3: Contacts List
+> Shows contacts with the following rule:  
+> • Names in ascending order,
+> • Should show first name,  
+> • if same first name, then show initial of the last name,  
+> • if same first name and same last name initial, then show first name and last name.
+>
+> **Key Highlights:**  
+> - MVVM Pattern
+> - Programmatic View
+> <img src="https://github.com/Sharungarg/TakeHomeProjects/blob/main/Contacts/Screen%20Shot%202022-03-30%20at%201.20.18%20PM.png" alt="drawing" width="400"/>
